@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Kanchana E.K</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>KANCHANA EK</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Project</a></li>
+        <button id="darkModeBtn">Dark Mode</button>
+      </ul>
+    </nav>
+    <script>
+      const body = document.body;
+      const btn = document.getElementById('darkModeBtn');
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        btn.textContent = 'Light Mode';
+      } else {
+        btn.textContent = 'Dark Mode';
+      }
+
+      // Toggle theme
+      btn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+      });
+    </script>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Projects</h2>
+      <div class="projects">
+
+        <!-- Personal Portfolio Website -->
+        <div class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Built using HTML, CSS, and JavaScript, responsive layout with dark/light mode, hosted on GitHub Pages.</p>
+          <a href="https://github.com/yourusername/portfolio-website" target="_blank">🔗 GitHub Repo</a>
+        </div>
+
+        <!-- Google Homepage Clone -->
+        <div class="card">
+          <h3>GOOGLE HOMEPAHE CLONE</h3>
+          <p>Pixel-perfect layout using HTML & CSS. Focused on alignment, spacing, and responsiveness.</p>
+          <a href="https://yourusername.github.io/google-homepage-clone/" target="_blank">🔗 View Project</a>
+        </div>
+
+        <!-- APPLE-WEBPAGE-CLONE -->
+        <div class="card">
+          <h3>APPLE WEBPAGEC LONE</h3>
+          <p>Created a simple Apple website clone using HTML, CSS, and JavaScript. Responsive and similar to Apple’s homepage.</p>
+          <a href=https://github.com/Kanchanaek/APPLE-WEBPAGE-CLONE target="_blank">🔗 View Project</a>
+        </div>
+
+        <!-- Playground Interactive -->
+        <div class="card">
+          <h3>INTERACTIVE PLAYGROUND</h3>
+          <p>An interactive web playground for testing HTML, CSS, and JS code snippets in real-time.</p>
+          <a href=https://yourusername.github.io/playground-interactive target="_blank">🔗 View Project</a>
+        </div>
+
+        <!-- PRODUCT-SHOWCASE-PAGE -->
+        <div class="card">
+          <h3>PRODUCT SHOWCASE PAGE</h3>
+          <p>Showcases products with interactive cards, hover effects, and responsive grid layout.</p>
+          <a href=https://yourusername.github.io/product-showcase-page target="_blank">🔗 View Project</a>
+        </div>
+
+        <!-- OPEN-BANK-PAGE -->
+        <div class="card">
+          <h3>OPEN BANK PAGE</h3>
+          <p>Banking landing page clone with clean design and smooth user interface using HTML & CSS.</p>
+          <a href=https://yourusername.github.io/open-bank-page  target="_blank">🔗 View Project</a>
+        </div>
+
+  
+        <div class="card">
+          <h3>RECREATE WEBPAGE</h3>
+          <p>Recreated an existing webpage with modern layout techniques, practicing advanced CSS & JavaScript.</p>
+          <a href=https://github.com/Kanchanaek/Recreate-Webpage target="_blank">🔗 View Project</a>
+        </div>
+
+      
+        <div class="card">
+          <h3>RETRO-CALCULATOR-APP</h3>
+          <p>A retro-styled calculator built using JavaScript, HTML, and CSS with full functionality.</p>
+          <a href=https://github.com/Kanchanaek/RETRO-CALCULATOR-APP target="_blank">🔗 View Project</a>
+        </div>
+
+        <div class="card">
+          <h3>SYSTEM TIME BASED HOMEPAGE</h3>
+          <p>Home page changes content and styling based on the system time (morning, afternoon, evening, night).</p>
+          <a href=https://github.com/Kanchanaek/System-Time-Based-Home-Page target="_blank">🔗 View Project</a>
+        </div>
+
+   
+        <div class="card">
+          <h3>TIME-BASED-UI</h3>
+          <p>User interface adjusts colors and greeting messages based on the current system time.</p>
+          <a href=https://github.com/Kanchanaek/TIME-BASED-UI target="_blank">🔗 View Project</a>
+        </div>
+
+      
+        <div class="card">
+          <h3>CSS LAYOUT PROJECT</h3>
+          <p>Designed multi-section layout using Flexbox & Grid for modern responsive design.</p>
+          <a href=https://github.com/Kanchanaek/BASIC-CSS-LAYOUT target="_blank">🔗 View Project</a>
+        </div>
+
+     
+        <div class="card">
+          <h3>CODE PEN CARD</h3>
+          <p>Simple modern project card design inspired by CodePen. Includes hover effects and smooth transitions.</p>
+          <a href=https://github.com/Kanchanaek/CODE-PEN-CARD target="_blank">🔗 View Project</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kanchana E.K</p>
+  </footer>
+</body>
+</html>
